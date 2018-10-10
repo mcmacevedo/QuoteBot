@@ -2,7 +2,6 @@ const Twitter = require("twit");
 const iQuotes = require("iquotes");
 var quote, text, author, tweetBody;
 
-
 // Keys and Secrets have since been regenerated to prevent unwanted access to Bot Account.
 var T = new Twitter({
     consumer_key: 'ouLMThyeQmqz0XYcQj21kkDwt',
