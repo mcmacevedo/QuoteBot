@@ -10,14 +10,9 @@ var T = new Twitter({
     access_token_secret: 'HKoIJ2EUqo9Zpqz0pGlETX52RTehPxI8ONR7EKYWEHsEn',
 });
 
+postTweet();
 setInterval(function(){  
-    quote = (iQuotes.random());
-    text = quote["quote"];
-    author = quote["author"];
-    tweetBody = text + "\nBy: " + author;
-    T.post('statuses/update', {status: tweetBody}, function(error, data, response) {
-        console.log(data)
-    });  
+    postTweet();
 }, minutesToSeconds(480)); // 60 seconds
 
 function minutesToSeconds(minutes) {
@@ -26,4 +21,14 @@ function minutesToSeconds(minutes) {
 
 function hoursToMinutes() {
     return (hoursToMinutes*60);
+}
+
+function postTweet() {
+    quote = (iQuotes.random());
+    text = quote["quote"];
+    author = quote["author"];
+    tweetBody = text + "\nBy: " + author;
+    T.post('statuses/update', {status: tweetBody}, function(error, data, response) {
+        console.log(data)
+    });  
 }
