@@ -4,7 +4,8 @@
   "description": "A Twitter QuoteBot that will publish quotes daily using the Quotes API",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/mcmacevedo/QuoteBot/issues"
   },
-  "homepage": "https://github.com/mcmacevedo/QuoteBot#readme"
+  "homepage": "https://github.com/mcmacevedo/QuoteBot#readme",
+  "dependencies": {
+    "iquotes": "^1.0.3",
+    "twit": "^2.2.11"
+  }
 }
