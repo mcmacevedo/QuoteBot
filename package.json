@@ -1,0 +1,23 @@
+{
+  "name": "quotebot",
+  "version": "1.0.0",
+  "description": "A Twitter QuoteBot that will publish quotes daily using the Quotes API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcmacevedo/QuoteBot.git"
+  },
+  "keywords": [
+    "Quotes",
+    "Twitter"
+  ],
+  "author": "Marc Acevedo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mcmacevedo/QuoteBot/issues"
+  },
+  "homepage": "https://github.com/mcmacevedo/QuoteBot#readme"
+}
