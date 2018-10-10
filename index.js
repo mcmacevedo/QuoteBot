@@ -4,10 +4,10 @@ var quote, text, author, tweetBody;
 
 
 var T = new Twitter({
-    consumer_key: '7UNEnwV33qJ6Rs3c6CFYKtDkc',
-    consumer_secret: 'PFIcTBBUUzYSJNobLIMVMjzjVMyBnaubrzJuFubbS2xc90Y6gF',
-    access_token: '1049789916245356551-Lb6pd1jYENqNuzifQZnIkp8g33OKee',
-    access_token_secret: 'A6IeSmLV9ump5bwrdVhfjaU4jJp0uLQP4fPPmtM1sT9VQ',
+    consumer_key: 'ouLMThyeQmqz0XYcQj21kkDwt',
+    consumer_secret: 'Di64bHxRglEUKnARlos5BqwI0QTQneUUd9wzb269asftjuoJ72',
+    access_token: '1049789916245356551-AYkXCkhq2z5kSyfxL2G1MJVGs3kZUx',
+    access_token_secret: 'HKoIJ2EUqo9Zpqz0pGlETX52RTehPxI8ONR7EKYWEHsEn',
 });
 
 setInterval(function(){  
