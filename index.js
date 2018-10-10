@@ -10,8 +10,7 @@ var T = new Twitter({
     access_token_secret: 'A6IeSmLV9ump5bwrdVhfjaU4jJp0uLQP4fPPmtM1sT9VQ',
 });
 
-setInterval(function(){ 
-    //code goes here that will be run every 5 seconds.  
+setInterval(function(){  
     quote = (iQuotes.random());
     text = quote["quote"];
     author = quote["author"];
@@ -19,4 +18,12 @@ setInterval(function(){
     T.post('statuses/update', {status: tweetBody}, function(error, data, response) {
         console.log(data)
     });  
-}, 60000); // 60 seconds
+}, minutesToSeconds(480)); // 60 seconds
+
+function minutesToSeconds(minutes) {
+    return (minutes*60000);
+}
+
+function hoursToMinutes() {
+    return (hoursToMinutes*60);
+}

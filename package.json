@@ -22,6 +22,8 @@
   },
   "homepage": "https://github.com/mcmacevedo/QuoteBot#readme",
   "dependencies": {
+    "@google-cloud/storage": "^2.0.3",
+    "forever-monitor": "^1.7.1",
     "iquotes": "^1.0.3",
     "twit": "^2.2.11"
   }
